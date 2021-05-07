@@ -1,0 +1,1 @@
+# hotel-manege-ment-software-not-fully-automatic
