@@ -1,0 +1,151 @@
+def getdate():                                    #function for date and time
+    import datetime
+    return datetime.datetime.now()
+print("what you want to do\n 1. entry  2.check entries")
+x=int(input())
+if x==1:    #for retrive
+
+    print("kindly select your department \n  1) cooking department \n  2)Security Department \n  3)Room service department \n")
+    x1 = int(input("Enter the number"))
+    if x1==1:                                       #cooking
+        print("please select your name ")
+        print("1) ronny\n 2)jaggu\n 3)killer\n")
+        w1 = int(input("Enter the number"))
+        if w1==1:
+          with open("ronny","a") as w1:
+             print(getdate())
+             w1.write(input())
+             print(w1)
+
+        elif w1==2:
+          with open("jaggu","a") as w1:
+             print(getdate())
+             w1.write(input())
+             print(w1)
+
+        elif w1==3:
+          with open("killer","a") as w1:
+             print(getdate())
+             w1.write(input())
+             print(w1)
+        else:
+          print("not registered")
+
+    elif x1==2:                                 # security
+        print("please select your name ")
+        print("1) Sallu \n 2)Sanju \n 3)Don \n")
+        r1 = int(input("Enter the number"))
+        if r1==1:
+          with open("Sallu","a") as r1:
+             print(getdate())
+             r1.write(input())
+             print(r1)
+
+        elif r1==2:
+          with open("Sanju","a") as r1:
+             print(getdate())
+             r1.write(input())
+             print(r1)
+
+        elif r1==3:
+          with open("Don","a") as r1:
+             print(getdate())
+             r1.write(input())
+             print(r1)
+        else:
+            return0;
+    elif x1==3:                            #room service
+
+     # security
+        print("please select your name ")
+        print("1) king \n 2)rani \n 3)bahubali \n")
+        ent = int(input("Enter the number"))
+        if ent==1:
+          with open("king","a") as ent:
+             print(getdate())
+             ent.write(input())
+             print(ent)
+        elif ent==2:
+          with open("rani","a") as ent:
+             print(getdate())
+             ent.write(input())
+             print(ent)
+        else:
+          with open("bahubali","a") as ent:
+             print(getdate())
+             ent.write(input())
+             print (ent)
+    else:
+        print("invalid")
+
+elif x==2:
+
+    print("kindly select your department \n  1) cooking department \n  2)Security Department \n  3)Room service department \n")
+    inp= int(input("Enter the number"))
+    #cooking
+    if inp==1:
+
+        print("please select your name ")
+        print("1) ronny\n 2)jaggu\n 3)killer\n")
+        w2 = int(input("Enter the number"))
+        if w2==1:
+            with open("ronny") as l:
+
+                mmk=l.read()
+                print(mmk)
+
+        elif w2==2:
+            with open("jaggu") as f7:
+
+                mm=f7.read()
+                print(mm)
+
+        else:
+            with open("killer") as f6:
+
+                mk=f6.read()
+                print(mk)
+
+    elif inp==2:                                 #cooking
+        print("please select your name ")
+        print("1) Sallu \n 2)Sanju \n 3)Don \n")
+        r1 = int(input("Enter the number"))
+        if r1==1:
+          with open("Sallu") as f5:
+
+             m3=f5.read()
+             print(r1)
+
+        elif r1==2:
+          with open("Sanju") as f4:
+
+             m2=f4.write()
+             print(m2)
+
+        else:
+          with open("Don") as f3:
+
+             m1=f3.read()
+             print(m1)
+    else:
+
+     # security
+        print("please select your name ")
+        print("1) king \n 2)rani \n 3)bahubali \n")
+        ent = int(input("Enter the number"))
+        if ent==1:
+          with open("king") as f1:
+
+             a1=f1.read()
+             print(en1)
+        elif ent==2:
+          with open("rani") as f2:
+
+             a2=f2.read()
+             print(a2)
+        else:
+          with open("bahubali") as f2:
+                a1=f2.read()
+                print(a1)
+else:
+    print("invalid code")
